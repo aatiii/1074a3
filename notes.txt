@@ -1,0 +1,30 @@
+a. Add at least 5 unique ARIA Document Landmark Roles to your page.
+	link 100
+	checkbox 41
+
+	banner 10
+	navigation 12
+	main 21
+	heading 35
+	form 35
+	
+
+b. Add at least 4 ARIA States.
+	arial checked 41
+	aria-invalid 49
+	aria-pressed 52
+
+
+
+
+
+c. Add at least 4 ARIA Properties.
+
+	aira labelledby 39
+	arial level 35
+	valuenow 49
+	valuemin 49
+
+
+d. Add at least 2 ARIA-LIVE Region Properties. Don¡¯t worry about making anything
+actually function with these

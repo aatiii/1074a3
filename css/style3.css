@@ -1,0 +1,193 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+body {
+  font-family: Raleway, sans-serif;
+  line-height: 1.5;
+  /*color: #333;*/
+  background-image: url(../images/asanoha-400px.png);
+  margin-top: -20px;
+  padding-top: 20px;
+}
+#content[role="main"] {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+header {
+  margin-top: -20px;
+    padding-top: 20px;
+    background: rgba(255,255,255,.7);
+    position: fixed;
+    width: 100%;
+    box-shadow: 2px 2px 10px #ddd;
+}
+h1 {
+  font: 135%/1.5 "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #47c9af;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+/*navigation bar*/
+nav {
+  font: 115%/1.5 "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  line-height: 1;
+  border-bottom: 3px solid #47c9af;
+  text-align: center;
+  margin-top: -50px;
+
+}
+nav li {
+	display: inline-block;
+	width: 150px;
+	margin: 10px;
+}
+nav a {
+	color: darkslategray;
+	text-decoration: none;
+}
+nav ul {
+	list-style: none;
+}
+/*order form*/
+form {
+  width: 39%;
+  float: right;
+  line-height: 2;
+  /*margin-left: -50px;*/
+}
+form h2 {
+  font: 135%/1.5 "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  color: #333;
+  text-transform: capitalize;
+  font-size: 2.2em;
+  text-shadow: 1px 1px 2px rgba(64, 184, 160, 0.5);
+}
+#qty {
+    /*padding: 0;
+    margin: 0;
+    border: 1px solid #47c9af;
+    width: 120px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+    background: #fff no-repeat 90% 50%;
+    margin-top: 5px;
+    margin-bottom: 10px;*/
+}
+#qty input {
+    padding: 5px 8px;
+    width: 50px;
+    border: 1px solid #47c9af;
+    border-radius: 3px;
+    box-shadow: none;
+    background-color: rgba(255,255,255,.5);
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+#qty input:focus {
+    outline: none;
+}
+
+.button {
+  color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #ddd;
+  background: #47c9af;
+  font-size: 200%;
+  padding: 5px 10px;
+  margin-top: 20px;
+  border: none;
+}
+button[aria-pressed="true"],
+[role="button"][aria-pressed="true"] {
+    box-shadow: inset 0 0 4px #000;
+}
+
+div.images {
+  width: 60%;
+  float: left;
+  margin-top: 40px;
+}
+div.details {
+  margin-top: 25px;
+  width: 50%;
+  float: left;
+  padding-left: 10px;
+}
+h3#price {
+  color: #333;
+}
+div.features {
+  margin-top: 25px;
+  width: 40%;
+  float: right;
+}
+div.features ul {
+  list-style-type: circle;
+}
+div.qty {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+}
+.dropdown-content a{
+  color: #eee;
+  text-decoration: none;
+  display: block;
+}
+div.review {
+  margin-top: 20px;
+  float: left;
+  clear: both;
+}
+.textarea-field{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: 1px solid #47c9af;
+  box-shadow: 1px 1px 4px #EBEBEB;
+  -moz-box-shadow: 1px 1px 4px #EBEBEB;
+  -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  padding: 7px;
+  outline: none;
+    height:100px;
+    width: 100%;
+}
+.textarea-field:focus {
+    border: 1px solid #0C0;
+}
+div.feedback {
+  background-color: #47c9af;
+  text-align: center;
+  box-shadow: 2px 2px 5px #ddd;
+}
+div.feedback a {
+  color: white;
+
+  text-decoration: none;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 2em;
+}
+
+
+section.related {
+  margin-top: 20px;
+  float: right;
+  width: 40%;
+}
+
+footer {
+  padding-top: 100px;
+  clear: both;
+  text-align: center;
+  color: #333;
+}

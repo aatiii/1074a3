@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- This website is created by Hailun Li.
+		The target audience of the website is users who need physical accessibility. -->
+		<meta charset="utf-8" />
+		<title>Portable Vinyl Record Player</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link href="css/style3.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<header role="banner">
+			<h1>Vinyl Online</h1>
+			<nav role="navigation">
+				<ul>
+					<li><a href="index.html" title="home Page" tabindex="0">Home</a></li>
+					<li><a href="products.html" title="product page" tabindex="0">Our Products</a></li>
+					<li><a href="AboutUs.html" title="about us page" tabindex="0">About Us</a></li>
+					<li><a href="support.html" title="support page" tabindex="0">Support</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main id="content" role="main">
+
+			<section title="product1">
+				<!-- product photos -->
+				<div class="images">
+					<img src="images/rpgreen1.jpg" alt="Mint Record Player" width="200" height="200" role="img" tabindex="0" aria-label="vinyl record player color mint" />
+					<img src="images/rpgreen2.jpg" alt="Mint Record Player" width="200" height="200" role="img" tabindex="0" aria-label="vinyl record player color mint" />
+					<img src="images/rpgreen3.jpg" alt="Mint Record Player" width="200" height="200" role="img" tabindex="0" aria-label="vinyl record player color mint" />
+					<img src="images/rpcream1.jpg" alt="Mint Record Player" width="200" height="200" role="img" tabindex="0" aria-label="vinyl record player color mint" />
+					<img src="images/rpcream2.jpg" alt="Mint Record Player" width="200" height="200" role="img" tabindex="0" aria-label="vinyl record player color mint" />
+					<img src="images/rpcream3.jpg" alt="Mint Record Player" width="200" height="200" role="img" tabindex="0" aria-label="vinyl record player color mint" />
+				</div>
+
+				<form class="order" role="form">
+					<h2 role="heading" aria-level="1">Portable Vinyl Record Player</h2>
+					<h3 id="price">&#36;128</h3>
+					<span>★★★★☆</span> 4.0
+					<!-- mini order form -->
+					<div id="color" aria-labelledby="Color selection">
+						Color:
+						<input class="colorChkbox" type="checkbox" role="checkbox" aria-checked="false" tabindex="0" />
+						<label for="color">Mint</label>
+						<input class="colorChkbox" type="checkbox" role="checkbox" aria-checked="false" tabindex="0" />
+						<label for="color">Cream</label>
+					</div>
+					<div id="size">Size: One Size</div>
+					<div id="qty">
+						Quantity:
+						<input type="number" name="quantity" min="1" value="1" aria-valuenow="1" aria-valuemin="1" aria-invalid="false">
+					</div>
+					<div id="button">
+						<button id="addProduct" class="button "type="button" aria-pressed="false" onclick="handleBtnClick(event)" aria-disabled="false" tabindex="0">Add to Cart</button>
+					</div>
+				</form>
+				<!-- product descriptions -->
+				<div class="specs">
+					<div class="details">
+						<h3 role="heading" aria-level="2">Details</h3>
+						<p>Portable vintage-inspired turntable, housed in a faux leather briefcase,
+							from the experts at Crosley. This record player is perfect for playing your favorite vinyl LPs,
+							and comes complete with everything you need for the ultimate vinyl experience. </p>
+					</div>
+					<div class="features">
+						<h3 role="heading" aria-level="2">Features</h3>
+						<ul>
+							<li>Model number: 0001</li>
+							<li>Color: Mint</li>
+							<li>3 speeds: 33 1/3, 45, 78 rpm</li>
+							<li>Dimensions: 17"w &#42; 7"d &#42; 11"h</li>
+							<li>Weight: 12 lbs</li>
+							<li>Supplier Warranty: 1 Year Limited Manufacturers Warranty</li>
+						</ul>
+					</div>
+			  </div>
+				<!-- product reviews -->
+				<div class="review" aria-live="polite" aria-relevant="additions removals">
+					<h3 role="heading" aria-level="2">Reviews</h3>
+					<h4>User2384</h4>
+					<div class="rating-comment">
+						<span>★★★★★</span>
+					</div>
+					<p>Very happy with this product! have all my vinyl albums and now can listen to them.</p>
+					<h4>User9784</h4>
+					<div class="rating-comment">
+						<span>★★★★☆</span>
+					</div>
+					<p>I like it so far, sound quality is good.</p>
+					<label for="field5">
+						<textarea name="field5" class="textarea-field"></textarea>
+					</label>
+					<div class="feedback">
+						<p id="review"><a href="review.html" title="review page">Leave your review</a></p>
+					</div>
+				</div>
+			</section>
+			<!-- related product suggestions -->
+			<section class="related">
+				<h3 role="heading" aria-level="2">You May Also Like</h3>
+				<div class="related-images">
+					<a href="#"><img src="images/rp5.jpg" alt="Related Record Player" width="200" height="200" role="link" tabindex="0"/></a>
+					<a href="#"><img src="images/rp6.jpg" alt="Related Record Player" width="200" height="200" role="link" tabindex="0"/></a>
+					<a href="#"><img src="images/rp7.jpg" alt="Related Record Player" width="200" height="200" role="link" tabindex="0"/></a>
+					<a href="#"><img src="images/recordplayer303.jpg" alt="Related Record Player" width="200" height="200" role="link" tabindex="0"/></a>
+				</div>
+			</section>
+
+		</main>
+		<footer>
+			<hr>
+			<p><samll>&copy;Vinyl Online</small></p>
+		</footer>
+	</body>
+	<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+	<script>
+		function handleBtnClick(event) {
+		  toggleButton(event.target);
+		}
+
+		function handleBtnKeyPress(event) {
+		  // Check to see if space or enter were pressed
+		  if (event.keyCode === 32 || event.keyCode === 13) {
+		    // Prevent the default action to stop scrolling when space is pressed
+		    event.preventDefault();
+		    toggleButton(event.target);
+		  }
+		}
+
+		function toggleButton(element) {
+		  // Check to see if the button is pressed
+		  var pressed = (element.getAttribute("aria-pressed") === "true");
+		  // Change aria-pressed to the opposite state
+		  element.setAttribute("aria-pressed", !pressed);
+		}
+
+		var checkBoxes = $('.colorChkbox');
+		checkBoxes.change(function () {
+		    $('#addProduct').prop('disabled', checkBoxes.filter(':checked').length < 1).attr("aria-disabled","true", checkBoxes.filter(':checked').length < 1);
+		});
+		$('.colorChkbox').change();
+	</script>
+</html>
