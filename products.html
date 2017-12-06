@@ -6,7 +6,9 @@
 		<meta charset="utf-8" />
 		<title>Portable Vinyl Record Player</title>
 		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="vanilla-zoom/vanilla-zoom.css">
 		<link href="css/style3.css" rel="stylesheet" type="text/css">
+
 	</head>
 	<body>
 		<header role="banner">
@@ -24,13 +26,17 @@
 
 			<section title="product1">
 				<!-- product photos -->
-				<div class="images">
-					<img src="images/rpgreen1.jpg" alt="Mint Record Player" width="200" height="200" role="img" tabindex="0" aria-label="vinyl record player color mint" />
-					<img src="images/rpgreen2.jpg" alt="Mint Record Player" width="200" height="200" role="img" tabindex="0" aria-label="vinyl record player color mint" />
-					<img src="images/rpgreen3.jpg" alt="Mint Record Player" width="200" height="200" role="img" tabindex="0" aria-label="vinyl record player color mint" />
-					<img src="images/rpcream1.jpg" alt="Mint Record Player" width="200" height="200" role="img" tabindex="0" aria-label="vinyl record player color mint" />
-					<img src="images/rpcream2.jpg" alt="Mint Record Player" width="200" height="200" role="img" tabindex="0" aria-label="vinyl record player color mint" />
-					<img src="images/rpcream3.jpg" alt="Mint Record Player" width="200" height="200" role="img" tabindex="0" aria-label="vinyl record player color mint" />
+				<div class="images vanilla-zoom" id="my-gallery">
+					<div class="sidebar">
+						<img src="images/rp2blue1.jpg" alt="Mint Record Player" class="small-preview" width="200" height="200" role="img" tabindex="0" aria-label="vinyl record player color mint" />
+						<img src="images/rp2green1.jpg" alt="Mint Record Player" class="small-preview" width="200" height="200" role="img" tabindex="0" aria-label="vinyl record player color mint" />
+						<!-- <img src="images/rp2blue2.jpg" alt="Mint Record Player" class="small-preview" width="200" height="200" role="img" tabindex="0" aria-label="vinyl record player color mint" /> -->
+						<!-- <img src="images/rpcream1.jpg" alt="Mint Record Player" class="small-preview" width="200" height="200" role="img" tabindex="0" aria-label="vinyl record player color mint" /> -->
+
+					</div>
+					<div class="zoomed-image"></div>
+					<!-- <img src="images/rpcream2.jpg" alt="Mint Record Player" width="200" height="200" role="img" tabindex="0" aria-label="vinyl record player color mint" />
+					<img src="images/rpcream3.jpg" alt="Mint Record Player" width="200" height="200" role="img" tabindex="0" aria-label="vinyl record player color mint" /> -->
 				</div>
 
 				<form class="order" role="form">
@@ -39,11 +45,11 @@
 					<span>★★★★☆</span> 4.0
 					<!-- mini order form -->
 					<div id="color" aria-labelledby="Color selection">
-						Color:
+						Color: &nbsp;
 						<input class="colorChkbox" type="checkbox" role="checkbox" aria-checked="false" tabindex="0" />
 						<label for="color">Mint</label>
 						<input class="colorChkbox" type="checkbox" role="checkbox" aria-checked="false" tabindex="0" />
-						<label for="color">Cream</label>
+						<label for="color">Blue</label>
 					</div>
 					<div id="size">Size: One Size</div>
 					<div id="qty">
@@ -113,7 +119,12 @@
 		</footer>
 	</body>
 	<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+	<script src="vanilla-zoom/vanilla-zoom.js"></script>
 	<script>
+
+		 vanillaZoom.init('#my-gallery');
+
+
 		function handleBtnClick(event) {
 		  toggleButton(event.target);
 		}
