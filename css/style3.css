@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Raleway);
 
 body {
   font-family: Raleway, sans-serif;
@@ -115,6 +115,10 @@ div.images {
   max-width: 55%;
   float: left;
   margin-top: 40px;
+}
+.zoomed-image {
+  box-shadow: 2px 2px 11px #d3d3d3;
+  border-radius: 10px;
 }
 
 div.details {
